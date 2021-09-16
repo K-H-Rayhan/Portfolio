@@ -1,14 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Image from 'next/image'
 function header() {
     let x= '/'
     if (typeof window !== "undefined") {
         x = window.location.pathname;
       }
     return (
-        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter md:backdrop-blur backdrop-blur-sm bg-opacity-75 z-50">
+        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter md:backdrop-blur backdrop-blur-sm bg-opacity-75 z-50 h-16">
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
