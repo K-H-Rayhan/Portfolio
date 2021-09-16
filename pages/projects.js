@@ -3,7 +3,7 @@ function projects() {
     return (
         <Layout>
         <div className="mt-12">
-        Projects
+        Projects{window.location.href}asd{window.location.pathname}
             </div>
         </Layout>
     )

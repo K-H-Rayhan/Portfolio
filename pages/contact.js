@@ -3,7 +3,7 @@ function contact() {
     return (
         <Layout>
         <div className="mt-12">
-            Contact
+            Contact{window.location.href}asd{window.location.pathname}
             </div>
         </Layout>
     )

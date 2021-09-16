@@ -15,10 +15,10 @@ function header() {
                     <img src="/images/unnamed.jpg" alt="" className=" rounded-full w-10 cursor-pointer hidden md:inline" />
                 </Link>
                 <div className="space-x-3 flex flex-nowrap items-center ">
-                    <ul className="hover:text-indigo-600"><Link href="/">Home</Link></ul>
-                    <ul className="hover:text-indigo-600"><Link href="/projects">Projects</Link></ul>
-                    <ul className="hover:text-indigo-600"><Link href="/contact">Contact</Link></ul>
-                    <ul className="hover:text-indigo-600"><Link href="/about">About</Link></ul>
+                    <ul className={"hover:text-indigo-600 " + (window.location.pathname == '/' ? 'text-indigo-600' : '')}><Link href="/">Home</Link></ul>
+                    <ul className={"hover:text-indigo-600 " + (window.location.pathname == '/projects' ? 'text-indigo-600' : '')}><Link href="/projects">Projects</Link></ul>
+                    <ul className={"hover:text-indigo-600 " + (window.location.pathname == '/contact' ? 'text-indigo-600' : '')}><Link href="/contact">Contact</Link></ul>
+                    <ul className={"hover:text-indigo-600 " + (window.location.pathname == '/about' ? 'text-indigo-600' : '')}><Link href="/about">About</Link></ul>
                 </div>
             </div>
         </div>
