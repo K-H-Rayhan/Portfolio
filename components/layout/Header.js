@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 function header() {
     return (
-        <div className="fixed top-0 flex justify-center font-semibold w-full shadow-md bg-white backdrop-filter md:backdrop-blur backdrop-blur-sm bg-opacity-75 z-50">
+        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter md:backdrop-blur backdrop-blur-sm bg-opacity-75 z-50">
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -14,11 +14,11 @@ function header() {
                 <Link href="/" >
                     <img src="/images/unnamed.jpg" alt="" className=" rounded-full w-10 cursor-pointer hidden md:inline" />
                 </Link>
-                <div className="space-x-3 flex flex-nowrap items-center">
-                    <ul className="hover:text-gray-600"><Link href="/">Home</Link></ul>
-                    <ul className="hover:text-gray-600"><Link href="/projects">Projects</Link></ul>
-                    <ul className="hover:text-gray-600"><Link href="/contact">Contact</Link></ul>
-                    <ul className="hover:text-gray-600"><Link href="/about">About</Link></ul>
+                <div className="space-x-3 flex flex-nowrap items-center ">
+                    <ul className="hover:text-indigo-600"><Link href="/">Home</Link></ul>
+                    <ul className="hover:text-indigo-600"><Link href="/projects">Projects</Link></ul>
+                    <ul className="hover:text-indigo-600"><Link href="/contact">Contact</Link></ul>
+                    <ul className="hover:text-indigo-600"><Link href="/about">About</Link></ul>
                 </div>
             </div>
         </div>
