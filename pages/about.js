@@ -3,7 +3,7 @@ function about() {
     return (
         <Layout>
         <div className="mt-12">
-            About{window.location.href}asd{window.location.pathname}
+            About
             </div>
         </Layout>
     )
