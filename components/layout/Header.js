@@ -7,7 +7,7 @@ function header() {
         x = window.location.pathname;
       }
     return (
-        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter md:backdrop-blur backdrop-blur-sm bg-opacity-75 z-50 h-16">
+        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter backdrop-blur-sm bg-opacity-75 z-50 h-14 md:h-16">
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

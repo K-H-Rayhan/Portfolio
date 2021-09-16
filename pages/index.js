@@ -13,10 +13,9 @@ export default function Home() {
         </div>
         <div className="md:col-span-1 self-start md:self-center">
           <img src="/images/16120170213243.jpg" alt=""  className="rounded-full  md:w-80 w-52"/>
-        </div>
-
-        
+        </div>        
       </div>
+  
     </Layout>
   )
 }
