@@ -4,9 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        custom: ["Inter", "sans-serif"]
-      }
+      backgroundImage: {
+        'hero-pattern': "url('/images/download1.png')",
+       }
     },
   },
   variants: {
