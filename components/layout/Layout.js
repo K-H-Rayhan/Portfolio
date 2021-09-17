@@ -4,7 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 export default function Layout({ title, keywords, description, children }) {
     return (
-        <div className="select-none h-screen overflow-hidden">
+        <div className="select-none h-screen ">
             <Head><title>{title}</title></Head>
             <meta name='description' content={description} />
             <meta name='keywords' content={keywords} />
