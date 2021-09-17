@@ -3,12 +3,12 @@ import Header from './Header'
 import Footer from './Footer'
 export default function Layout({ title, keywords, description, children }) {
     return (
-        <div className="select-none h-screen ">
+        <div className="select-none h-screen  overflow-scroll scrollbar scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-white scrollbar-thumb-rounded-full"> 
             <Head><title>{title}</title></Head>
             <meta name='description' content={description} />
             <meta name='keywords' content={keywords} />
             <Header />
-            <div className="flex flex-col items-center"> {children}</div>
+            <div className="flex flex-col items-center "> {children}</div>
             {/* <Footer /> */}
         </div>
     )

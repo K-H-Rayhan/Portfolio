@@ -5,7 +5,7 @@ import router, { useRouter } from 'next/router'
 function header() {
       const router = useRouter();
     return (
-        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter backdrop-blur-sm bg-opacity-75 z-50 h-14 md:h-16">
+        <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter backdrop-blur-sm bg-opacity-75 z-10 h-14 md:h-16">
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -20,6 +20,7 @@ function header() {
                     <ul className={"hover:text-green-400 " + (router.pathname == '/projects' ? 'text-green-400' : '')}><Link href="/projects">Projects</Link></ul>
                     <ul className={"hover:text-green-400 " + (router.pathname == '/contact' ? 'text-green-400' : '')}><Link href="/contact">Contact</Link></ul>
                     <ul className={"hover:text-green-400 " + (router.pathname == '/about' ? 'text-green-400' : '')}><Link href="/about">About</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/about' ? 'text-green-400' : '')}><Link href="/blog">Blog</Link></ul>
                 </div>
             </div>
         </div>
