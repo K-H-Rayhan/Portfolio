@@ -2,27 +2,27 @@ import Layout from '../components/layout/Layout'
 function projects() {
     return (
         <Layout title="Rayhan | Projects">
-            <div class=" font-sans h-screen w-full flex flex-row justify-center items-center">
-                <div class="card w-3/4 mx-auto bg-white shadow">
-                    <img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="https://avatars.githubusercontent.com/u/67946056?v=4" alt="" />
-                    <div class="text-center mt-2 text-3xl font-medium">Ajo Alex</div>
-                    <div class="text-center mt-2 font-light text-sm">@devpenzil</div>
-                    <div class="text-center font-normal text-lg">Kerala</div>
-                    <div class="px-6 text-center font-light text-sm">
+            <div className=" font-sans h-screen w-full flex flex-row justify-center items-center">
+                <div className="card w-3/4 mx-auto bg-white shadow">
+                    <img className="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="https://avatars.githubusercontent.com/u/67946056?v=4" alt="" />
+                    <div className="text-center mt-2 text-3xl font-medium">Ajo Alex</div>
+                    <div className="text-center mt-2 font-light text-sm">@devpenzil</div>
+                    <div className="text-center font-normal text-lg">Kerala</div>
+                    <div className="px-6 text-center font-light text-sm">
                         <p>
                             Front end Developer, avid reader. Love to take a long walk, swim
                         </p>
                     </div>
-                    <hr class="mt-4" />
-                    <div class="flex p-2">
-                        <div class="w-1/2 text-center">
-                            <span class="font-bold">1.8 k</span> Followers
+                    <hr className="mt-4" />
+                    <div className="flex p-2">
+                        <div className="w-1/2 text-center">
+                            <span className="font-bold">1.8 k</span> Followers
                         </div>
-                        <div class="w-0 border border-gray-300">
+                        <div className="w-0 border border-gray-300">
 
                         </div>
-                        <div class="w-1/2 text-center">
-                            <span class="font-bold">2.0 k</span> Following
+                        <div className="w-1/2 text-center">
+                            <span className="font-bold">2.0 k</span> Following
                         </div>
                     </div>
                 </div>
