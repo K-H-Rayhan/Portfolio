@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import {useRouter} from 'next/router'
 import Header from './Header'
 import Footer from './Footer'
 export default function Layout({ title, keywords, description, children }) {
@@ -10,7 +9,7 @@ export default function Layout({ title, keywords, description, children }) {
             <meta name='keywords' content={keywords} />
             <Header />
             <div className="flex flex-col items-center"> {children}</div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
