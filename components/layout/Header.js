@@ -1,11 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import router, { useRouter } from 'next/router'
 function header() {
-    let x= '/'
-    if (typeof window !== "undefined") {
-        x = window.location.pathname;
-      }
+      const router = useRouter();
     return (
         <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter backdrop-blur-sm bg-opacity-75 z-50 h-14 md:h-16">
             <Head>
@@ -18,10 +16,10 @@ function header() {
                     <img src="/images/unnamed.jpg" alt="" className=" rounded-full w-10 cursor-pointer hidden md:inline" />
                 </Link>
                 <div className="space-x-3 flex flex-nowrap items-center ">
-                    <ul className={"hover:text-indigo-600 " + (x == '/' ? 'text-indigo-600' : '')}><Link href="/">Home</Link></ul>
-                    <ul className={"hover:text-indigo-600 " + (x == '/projects' ? 'text-indigo-600' : '')}><Link href="/projects">Projects</Link></ul>
-                    <ul className={"hover:text-indigo-600 " + (x == '/contact' ? 'text-indigo-600' : '')}><Link href="/contact">Contact</Link></ul>
-                    <ul className={"hover:text-indigo-600 " + (x == '/about' ? 'text-indigo-600' : '')}><Link href="/about">About</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/' ? 'text-green-400' : '')}><Link href="/">Home</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/projects' ? 'text-green-400' : '')}><Link href="/projects">Projects</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/contact' ? 'text-green-400' : '')}><Link href="/contact">Contact</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/about' ? 'text-green-400' : '')}><Link href="/about">About</Link></ul>
                 </div>
             </div>
         </div>

@@ -16,6 +16,6 @@ export default function Layout({ title, keywords, description, children }) {
 }
 Layout.defaultProps = {
     title: 'Rayhan | Software Engineer',
-    description: 'Engineer',
-    keywords: 'music, dj, edm, events'
+    description: 'Kamrul Hasan Rayhan Portfolio',
+    keywords: 'KHRayhan, KHR, Kamrul, Hasan, Rayhan, Programmer'
 }
