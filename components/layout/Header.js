@@ -20,7 +20,7 @@ function header() {
                     <ul className={"hover:text-green-400 " + (router.pathname == '/projects' ? 'text-green-400' : '')}><Link href="/projects">Projects</Link></ul>
                     <ul className={"hover:text-green-400 " + (router.pathname == '/contact' ? 'text-green-400' : '')}><Link href="/contact">Contact</Link></ul>
                     <ul className={"hover:text-green-400 " + (router.pathname == '/about' ? 'text-green-400' : '')}><Link href="/about">About</Link></ul>
-                    <ul className={"hover:text-green-400 " + (router.pathname == '/about' ? 'text-green-400' : '')}><Link href="/blog">Blog</Link></ul>
+                    <ul className={"hover:text-green-400 " + (router.pathname == '/blog' ? 'text-green-400' : '')}><Link href="/blog">Blog</Link></ul>
                 </div>
             </div>
         </div>
