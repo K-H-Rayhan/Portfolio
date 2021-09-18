@@ -38,8 +38,8 @@ export default function Home() {
 
       <div className="grid md:grid-cols-2 md:h-screen items-center justify-items-center w-full bg-no-repeat bg-center bg-none md:bg-hero-pattern">
         <div className="text-center">
-          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0 lg:mx-36 md:mx-24 mx-28" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Footsteps in Every Project</span></div>
-          <Button link="projects" name="More &#8594;"/>
+          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Footsteps in Every Project</span></div>
+          <Button link="projects" name="Cotact Me&#8594;"/>
         </div>
         <div className="grid md:grid-cols-2  gap-2">
           <div className="flex flex-col place-content-center  gap-2">
