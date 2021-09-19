@@ -1,6 +1,6 @@
 import Button from '../components/others/Button'
 import Layout from '../components/layout/Layout'
-import Link from 'next/link'
+import Designstep from '../components/card/Designstep'
 import Homecard from '../components/card/Homecard'
 export default function Home() {
   return (
@@ -12,16 +12,16 @@ export default function Home() {
         <div className="md:col-span-2 flex flex-col items-center text-center self-start md:self-center row-span-1 ">
           <div className="text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-blue-600  tracking-wider font-medium text-sm">GAMER, GRAPHIC DESIGNER, PROGRAMMER</div>
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 mx-4 md:my-0">I am a Full Stack Developer</div>
-         <Button link="projects" name="Explore Projects &#8594;"/>
+          <Button link="projects" name="Explore Projects &#8594;" />
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 md:h-screen items-center justify-items-center w-full bg-no-repeat bg-center bg-none md:bg-hero-pattern">
+      <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full bg-no-repeat bg-center bg-none lg:bg-hero-pattern">
         <div className="text-center">
-          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My&nbsp;Stack</span></div>
-          <Button link="projects" name="More &#8594;"/>
+          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 lg:py-10 my-4 lg:my-0 mb-5 lg:mb-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My&nbsp;Stack</span></div>
+          <Button link="about#2" name="More &#8594;" />
         </div>
-        <div className="grid md:grid-cols-2  gap-2">
+        <div className="grid md:grid-cols-2   gap-2 bg-no-repeat bg-center md:bg-none bg-hero-pattern">
           <div className="flex flex-col place-content-center  gap-2">
             <Homecard src="/images/nextjs.png" name="NextJs" link="https://nextjs.org/" />
             <Homecard src="/images/tailwind.jpg" name="Tailwind" link="https://tailwindcss.com/" />
@@ -36,22 +36,26 @@ export default function Home() {
       </div>
 
 
-      <div className="grid md:grid-cols-2 md:h-screen items-center justify-items-center w-full bg-no-repeat bg-center bg-none md:bg-hero-pattern">
-        <div className="text-center">
-          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Footsteps in Every Project</span></div>
-          <Button link="projects" name="Cotact Me&#8594;"/>
+      <div className="grid lg:grid-cols-7 md:h-screen items-center justify-items-center w-full mt-24 md:mt-0">
+        <div className="text-center block lg:hidden ">
+          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0 mx-4 md:mx-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Goals in Every Project</span></div>
+          <Button link="contact" name="Cotact Me&#8594;" />
         </div>
-        <div className="grid md:grid-cols-2  gap-2">
-          <div className="flex flex-col place-content-center  gap-2">
-            <Homecard src="/images/nextjs.png" name="NextJs" link="https://nextjs.org/" />
-            <Homecard src="/images/tailwind.jpg" name="Tailwind" link="https://tailwindcss.com/" />
-
+        <div className="lg:col-span-4 flex flex-col md:flex-row gap-4 md:bg-no-repeat bg-center bg-hero-pattern">
+          <div className="flex flex-col place-content-center  gap-6  ">
+            <Designstep number="1" text="Simple Design" bigText="Thinking as a user first" />
+            <Designstep number="2" text="High Performance" bigText="90+ Score in GT Metrix and Lighthouse" />
+            <Designstep number="3" text="SEO" bigText="Good SEO optimization" />
           </div>
-          <div className="flex flex-col place-content-center  gap-2">
-            <Homecard src="/images/nodejs.jpg" name="NodeJs" link="https://nodejs.org/en/" />
-            <Homecard src="/images/mongodb.jpg" name="Mongodb" link="https://www.mongodb.com/" />
-            <Homecard src="/images/wordpress.png" name="Wordpress" link="https://wordpress.com/" />
+          <div className="flex flex-col place-content-center  gap-6 mt-2 md:mt-0" >
+            <Designstep number="4" text="Responsiveness" bigText="Testing into all device perspective" />
+            <Designstep number="5" text="Bugs & Errors" bigText="Making sure no Bugs & Errors" />
+            <Designstep number="6" text="Clean Code" bigText="Writing Clean Codes with comments" />
           </div>
+        </div>
+        <div className="text-center md:col-span-3 hidden lg:block ">
+          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0 " ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Goals in Every Project</span></div>
+          <Button link="contact" name="Cotact Me&#8594;" />
         </div>
       </div>
     </Layout>

@@ -7,9 +7,9 @@ function header() {
     return (
         <div className="fixed top-0 flex justify-center font-medium w-full shadow-md bg-white backdrop-filter backdrop-blur-sm bg-opacity-75 z-10 h-14 md:h-16">
             <Head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" /> */}
             </Head>
             <div className="w-3/4 flex flex-row justify-center md:justify-between my-3">
                 <Link href="/" >
