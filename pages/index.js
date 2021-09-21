@@ -41,13 +41,13 @@ export default function Home() {
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 md:my-0 mb-5 md:mb-0 mx-4 md:mx-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My Goals in Every Project</span></div>
           <Button link="contact" name="Cotact Me&#8594;" />
         </div>
-        <div className="lg:col-span-4 flex flex-col md:flex-row gap-4 md:bg-no-repeat bg-center bg-hero-pattern">
-          <div className="flex flex-col place-content-center  gap-6  ">
+        <div className="lg:col-span-4 flex flex-col md:flex-row md:bg-no-repeat bg-center bg-hero-pattern">
+          <div className="flex flex-col md:ml-4 place-content-center  ">
             <Designstep number="1" text="Simple Design" bigText="Thinking as a user first" />
             <Designstep number="2" text="High Performance" bigText="90+ Score in GT Metrix and Lighthouse" />
             <Designstep number="3" text="SEO" bigText="Good SEO optimization" />
           </div>
-          <div className="flex flex-col place-content-center  gap-6 mt-2 md:mt-0" >
+          <div className="flex flex-col place-content-center md:ml-4 md:mt-0" >
             <Designstep number="4" text="Responsiveness" bigText="Testing into all device perspective" />
             <Designstep number="5" text="Bugs & Errors" bigText="Making sure no Bugs & Errors" />
             <Designstep number="6" text="Clean Code" bigText="Writing Clean Codes with comments" />

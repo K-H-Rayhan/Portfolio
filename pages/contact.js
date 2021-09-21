@@ -2,6 +2,7 @@ import Layout from '../components/layout/Layout'
 import Button from '../components/others/Button'
 import Contactcard from '../components/card/Contactcard'
 function contact() {
+    const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     return (
         <Layout title="Rayhan | Contact">
             <div className="h-screen w-full grid grid-rows-5 md:grid-cols-2 mt-16 md:mt-0 items-center justify-center justify-items-center">
@@ -9,10 +10,10 @@ function contact() {
                     Contact Me<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
                 <div className="flex items-center justify-center w-full row-span-3 row-start-2">
-                    <form action="submit" className=" flex flex-col w-full p-2 md:p-10 gap-3 md:gap-5" >
-                        <input type="name" name="name" className=" text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2" placeholder="Name" />
-                        <input type="name" name="email" className=" text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none  rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2" placeholder="Email" />
-                        <input type="name" name="number" className=" text-lg  font-semibold focus:ring-1 focus:ring-green-400 outline-none  rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2" placeholder="Contact No." />
+                    <form action="submit" className=" flex flex-col w-full p-2 md:p-10 md:gap-5" >
+                        <input type="name" name="name" className={inputDesign} placeholder="Name" />
+                        <input type="name" name="email" className={inputDesign} placeholder="Email" />
+                        <input type="name" name="number" className={inputDesign} placeholder="Contact No." />
                         <textarea name="" id="" cols="30" rows="4" className=" text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none  rounded-md border-2 border-gray-300 focus:border-green-400 p-2" placeholder="Your Message"></textarea>
                         <div className="self-center mt-6"><Button name="Send Message" className="" /></div>
                     </form>

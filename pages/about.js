@@ -3,7 +3,7 @@ function about() {
     return (
         <Layout title="Rayhan | About">
             <div className=" h-screen w-full flex flex-row justify-center items-center">
-                <div className="w-3/4 mx-auto bg-white shadow">
+                <div className="w-full mx-auto bg-white">
                     <img className="w-32 h-32 mx-auto rounded-full -mt-20 border-8 border-white" src="/images/1612016993441.jpg" alt="" />
                     <div className="text-center mt-2 text-3xl font-bold">Kamrul Hasan Rayhan</div>
                     <div className="text-center mt-2 font-light text-base">@khrayhan</div>
@@ -13,8 +13,7 @@ function about() {
                             Full stack developer
                         </p>
                     </div>
-                    <hr className="mt-4" />
-                    <div className="flex p-2 justify-center">
+                    <div className="flex justify-center">
                         asd
                     </div>
                 </div>
