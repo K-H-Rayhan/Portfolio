@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-col place-content-center  gap-2">
             <Homecard src="/images/nodejs.jpg" name="NodeJs" link="https://nodejs.org/en/" />
             <Homecard src="/images/mongodb.jpg" name="Mongodb" link="https://www.mongodb.com/" />
-            <Homecard src="/images/wordpress.png" name="Wordpress" link="https://wordpress.com/" />
+            <Homecard src="/images/express.jpg" name="ExpressJs" link="https://expressjs.com/" />
           </div>
         </div>
       </div>
