@@ -5,7 +5,7 @@ function contact() {
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     return (
         <Layout title="Rayhan | Contact">
-            <div className="h-screen w-full grid grid-rows-5 md:grid-cols-2 mt-16 md:mt-0 items-center justify-center justify-items-center">
+            <div className="h-screen w-full grid grid-rows-5 md:grid-cols-2 mt-16 md:mt-0 items-center justify-center justify-items-center hidden">
                 <div className="md:text-6xl text-4xl font-extrabold flex-wrap text-green-400 mx-5 md:row-start-2">
                     Contact Me<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
@@ -22,7 +22,7 @@ function contact() {
             </div>
 
             <div className=" w-full grid md:grid-rows-5 items-center justify-items-center">
-                <div className="xl:text-6xl lg:text-5xl text-4xl font-extrabold text-green-400 mx-5 self-center place-self-center justify-self-center mt-0 md:mt-4">Others<hr className=" w-16 mb-4 md:mb-0 h-2 bg-green-400 rounded-full " /></div>
+                <div className="xl:text-6xl lg:text-5xl text-4xl font-extrabold text-green-400 mx-5 self-center place-self-center justify-self-center mt-0 md:mt-4">Contacts<hr className=" w-16 mb-4 md:mb-0 h-2 bg-green-400 rounded-full " /></div>
                 <div className="grid md:grid-cols-2 grid-cols-1 md:row-span-2 gap-4">
                     <div className="grid gap-4">
                         <Contactcard text="Facebook" srce="https://www.facebook.com/kamrulhassan.rayhan.7/" imgSrc="https://img.icons8.com/office/40/000000/facebook.png"/>
