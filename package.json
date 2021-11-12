@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "MONGODB_URI=http://localhost:27017 next start"
+    "start": "next start"
   },
   "dependencies": {
     "mongodb": "^3.7.3",
