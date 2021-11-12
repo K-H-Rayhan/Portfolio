@@ -4,15 +4,12 @@ import Contactcard from '../components/card/Contactcard'
 import clientPromise from '../lib/mongodb'
 import { useState } from "react";
 export default function contact({ movie }) {
-    console.log(movie);
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     const [inputs, setInputs] = useState({});
     const done = () =>{
         fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
     }
     const handleChange = (event) => {
-        console.log(event.target.name);
-        console.log(event.target.value);
         const name = event.target.name;
         const value = event.target.value;
         setInputs(values => ({ ...values, [name]: value }))
@@ -20,7 +17,6 @@ export default function contact({ movie }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(inputs.username);
     }
     return (
         <Layout title="Rayhan | Contact">
