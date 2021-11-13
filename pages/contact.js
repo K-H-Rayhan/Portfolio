@@ -6,14 +6,16 @@ import { useRouter } from 'next/router';
 export default function contact( ) {
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     const [inputs, setInputs] = useState({});
-    const done = () =>{
-        fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
+    const done = async (e) =>{
+      const data = await fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
+      const res = await data.json();
+      console.log(res);
     }
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
         setInputs(values => ({ ...values, [name]: value }))
-    }
+    } 
     const router = useRouter();
     const handleSubmit = (event) => {
         router.push('/thanks')
