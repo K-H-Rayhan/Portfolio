@@ -8,12 +8,6 @@ export default async function handler(req,res) {
   // Then you can execute queries against your database like so:
   // db.find({}) or any of the MongoDB Node Driver commands
   const data1 = req.query;
-  console.log(req.query);
-  try{
     const data = await db.collection("me").insertOne(data1);
-    console.log("done");
-  }catch{
-    console.log(error);
-  }
 }
   
