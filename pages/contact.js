@@ -1,9 +1,9 @@
 import Layout from '../components/layout/Layout'
-import Button from '../components/others/Button'
 import Contactcard from '../components/card/Contactcard'
 import clientPromise from '../lib/mongodb'
 import { useState } from "react";
-export default function contact({ movie }) {
+import { useRouter } from 'next/router';
+export default function contact( ) {
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     const [inputs, setInputs] = useState({});
     const done = () =>{
@@ -14,10 +14,12 @@ export default function contact({ movie }) {
         const value = event.target.value;
         setInputs(values => ({ ...values, [name]: value }))
     }
-
+    const router = useRouter();
     const handleSubmit = (event) => {
+        router.push('/thanks')
         event.preventDefault();
     }
+   
     return (
         <Layout title="Rayhan | Contact">
             <div className="h-screen w-full grid grid-rows-5 md:grid-cols-2 mt-16 md:mt-0 items-center justify-center justify-items-center ">
@@ -71,9 +73,7 @@ export async function getServerSideProps(context) {
     // Then you can execute queries against your database like so:
     // db.find({}) or any of the MongoDB Node Driver commands
 
-    const data = await db.collection("me").find({}).limit(200).toArray()
-    const movie = JSON.parse(JSON.stringify(data));
     return {
-        props: { movie },
+        props: {  },
     }
 }
