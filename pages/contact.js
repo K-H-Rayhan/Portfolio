@@ -66,7 +66,7 @@ export default function contact( ) {
         </Layout>
     )
 }
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const client = await clientPromise
     const db = client.db("contact");
     // client.db() will be the default database passed in the MONGODB_URI
