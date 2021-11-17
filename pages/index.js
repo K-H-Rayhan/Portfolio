@@ -19,7 +19,7 @@ export default function Home() {
       <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full bg-no-repeat bg-center bg-none lg:bg-hero-pattern">
         <div className="text-center">
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 lg:py-10 my-4 lg:my-0 mb-5 lg:mb-0" ><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">My&nbsp;Stack</span></div>
-          <Button link="about#2" name="More &#8594;" />
+          <Button link="about/#aboutskill" name="More &#8594;" />
         </div>
         <div className="grid md:grid-cols-2   gap-2 bg-no-repeat bg-center md:bg-none bg-hero-pattern">
           <div className="flex flex-col place-content-center  gap-2">

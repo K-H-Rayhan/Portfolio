@@ -2,39 +2,36 @@ import Layout from '../components/layout/Layout'
 function about() {
     return (
         <Layout title="Rayhan | About">
-            <div className=" h-screen flex flex-row justify-center items-center">
+            <div className=" h-screen flex flex-col justify-center items-center">
+                <div className="md:mb-20 md:text-6xl text-4xl font-extrabold flex-wrap mx-5 md:row-start-2 mb-10">
+                    About Me
+                </div>
                 <div className=" flex flex-col mx-auto bg-white items-center">
-                    <img className="w-32 h-32 mx-auto rounded-full -mt-20" src="/images/1612016993441.jpg" alt="" />
-                    <div className="text-center text-3xl font-bold">Kamrul Hasan Rayhan</div>
-                    <div className="text-center text-base font-semibold">@khrayhan</div>
-                    <div className="text-center font-medium text-lg">Dhaka,Bangladesh</div>
-                    <div className=" text-center font-base text-sm font-bold">
-                        <p>
-                            Full stack developer
-                        </p>
+                    <div className=" flex flex-col">
+                        <img className="w-32 h-32 mx-auto rounded-full border-2 mb-2 border-gray-100 " src="/images/1612016993441.jpg" alt="" />
+                        <div className="text-center font-semibold text-lg tracking-wide">Kamrul Hasan Rayhan</div>
+                        <div className="text-center text-base">@khrayhan</div>
                     </div>
-                    <div className="w-1/5 text-center font-semibold mt-5 shadow-lg p-6 border-t-2 border-gray-700" >
-                    I love writing clean codes for web and mobile applications, passionate about learning and exploring new technologies as well enthusiastic about UI/UX. As of my hobbies, I prefer playing games and listening to music.
-                    Besides these, I'm a Muslim who believes in Allah and the prophet Mohammad.
+                    <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold md:border-t-2 border-gray-700 md:shadow-lg p-6 text-lg tracking-wide sm:rounded-xl" >
+                        I'm a Full Stack Developer from Dhaka, Bangladesh. <br />
+                        I always strive to write elegent and efficient code. Passionate about learning and exploring new technologies as
+                        well as enthusiastic about UI/UX.<br />
+                        When I'm not coding, I am either playing games or listening to music.
                     </div>
                 </div>
             </div>
-            <div className=" font-sans h-screen w-full flex flex-row justify-center items-center" id="2">
-                <div className="card w-3/4 mx-auto bg-white shadow">
-                    <img className="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="" alt="" />
-                    <div className="text-center mt-2 text-3xl font-medium">Tech Skills</div>
-                    <hr className="mt-4" />
-                    <div className="flex p-2">
-                        <div className="w-1/2 text-center">
-                            <span className="font-bold">1.8 k</span> Followers
-                        </div>
-                        <div className="w-0 border border-gray-300">
-
-                        </div>
-                        <div className="w-1/2 text-center">
-                            <span className="font-bold">2.0 k</span> Following
-                        </div>
-                    </div>
+            <div className="md:h-screen flex md:flex-row justify-center items-center flex-col mb-14" id="#aboutskill">
+                <div className="md:text-6xl text-4xl font-extrabold flex-wrap mx-5 md:row-start-2  mb-10 md:mb-0 md:mr-10 ">
+                    Tech Skills
+                    <hr className=" mt-3 w-20 h-1 md:hidden bg-gray-700 rounded-full" />
+                </div>
+                <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold md:border-t-2 border-gray-700 md:shadow-lg p-6 text-lg tracking-wide sm:rounded-xl" >
+                    <div className="font-extrabold text-lg tracking-wide " >Libraries & Frameworks: <span className="font-bold text-base tracking-tight  " >
+                        React, NextJS, Tailwind, Bootstrap, ExpressJs</span><br /></div>
+                    <div className="font-extrabold text-lg tracking-wide" >Databases: <span className="font-bold text-base tracking-tight " >
+                        MongoDB, MySQL</span><br /></div>
+                        <div className="font-extrabold text-lg tracking-wide" >Miscellaneous: <span className="font-bold text-base tracking-tight " >
+                        Wordpress, Elementor</span><br /></div>
                 </div>
             </div>
         </Layout>

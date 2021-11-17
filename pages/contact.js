@@ -47,10 +47,10 @@ export default function contact( ) {
                         </div>
                     </form>
                 </div>
-                <hr className=" w-24 h-2 bg-green-400 rounded-full md:hidden" />
+              
             </div>
 
-            <div className=" w-full grid md:grid-rows-5 items-center justify-items-center">
+            <div className=" w-full grid md:grid-rows-5 justify-items-center">
                 <div className="xl:text-6xl lg:text-5xl text-4xl font-extrabold text-green-400 mx-5 self-center place-self-center justify-self-center mt-0 md:mt-4">Contacts<hr className=" w-16 mb-4 md:mb-0 h-2 bg-green-400 rounded-full " /></div>
                 <div className="grid md:grid-cols-2 grid-cols-1 md:row-span-2 gap-4">
                     <div className="grid gap-4">
@@ -66,7 +66,7 @@ export default function contact( ) {
         </Layout>
     )
 }
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
     const client = await clientPromise
     const db = client.db("contact");
     // client.db() will be the default database passed in the MONGODB_URI
