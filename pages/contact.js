@@ -3,13 +3,12 @@ import Contactcard from '../components/card/Contactcard'
 import clientPromise from '../lib/mongodb'
 import { useState } from "react";
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic'
 export default function contact( ) {
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     const [inputs, setInputs] = useState({});
-    const done = async (e) =>{
-      const data = await fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
-      const res = await data.json();
-      console.log(res);
+    async function done(){
+      const data = fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`);
     }
     const handleChange = (event) => {
         const name = event.target.name;
