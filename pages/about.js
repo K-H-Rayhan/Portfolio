@@ -3,8 +3,8 @@ function about() {
     return (
         <Layout title="Rayhan | About">
             <div className=" h-screen flex flex-col justify-center items-center">
-                <div className="md:mb-20 md:text-6xl text-4xl font-extrabold flex-wrap mx-5 md:row-start-2 mb-10">
-                    About Me
+            <div className="md:text-6xl text-4xl font-extrabold flex-wrap text-green-400 mx-5 md:row-start-2 mb-12">
+                    About Me<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
                 <div className=" flex flex-col mx-auto bg-white items-center">
                     <div className=" flex flex-col">
@@ -21,9 +21,8 @@ function about() {
                 </div>
             </div>
             <div className="md:h-screen flex md:flex-row justify-center items-center flex-col mb-14" id="#aboutskill">
-                <div className="md:text-6xl text-4xl font-extrabold flex-wrap mx-5 md:row-start-2  mb-10 md:mb-0 md:mr-10 ">
-                    Tech Skills
-                    <hr className=" mt-3 w-20 h-1 md:hidden bg-gray-700 rounded-full" />
+            <div className="md:text-6xl text-4xl font-extrabold flex-wrap text-green-400 mx-5 md:row-start-2">
+                    Tech Skills<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
                 <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold md:border-t-2 border-gray-700 md:shadow-lg p-6 text-lg tracking-wide sm:rounded-xl" >
                     <div className="font-extrabold text-lg tracking-wide " >Libraries & Frameworks: <span className="font-bold text-base tracking-tight  " >
