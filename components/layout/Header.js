@@ -15,7 +15,7 @@ function header() {
                 <Link href="/" >
                     <img src="/images/unnamed.jpg" alt="" className=" rounded-full w-10 cursor-pointer hidden md:inline" />
                 </Link>
-                <div className="space-x-3 flex flex-nowrap items-center font-semibold">
+                <div className="space-x-3 text-sm flex flex-nowrap items-center font-bold tracking-wide">
                     <ul className={"hover:text-green-400 " + (router.pathname == '/' ? 'text-green-400' : '')}><Link href="/">Home</Link></ul>
                     {/* <ul className={"hover:text-green-400 " + (router.pathname == '/projects' ? 'text-green-400' : '')}><Link href="/projects">Projects</Link></ul> */}
                     <ul className={"hover:text-green-400 " + (router.pathname == '/contact' ? 'text-green-400' : '')}><Link href="/contact">Contact</Link></ul>

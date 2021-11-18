@@ -12,7 +12,7 @@ export default function Home() {
         <div className="md:col-span-2 flex flex-col items-center text-center self-start md:self-center row-span-1 ">
           <div className="text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-blue-600  tracking-wider font-medium text-sm">GAMER, GRAPHIC DESIGNER, PROGRAMMER</div>
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 mx-4 md:my-0 text-black">I am a Full Stack Web Developer</div>
-          <Button link="projects" name="Explore Projects &#8594;" />
+          <Button link="blog" name="Explore Blogs &#8594;" />
         </div>
       </div>
       <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full">
