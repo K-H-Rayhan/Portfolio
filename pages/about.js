@@ -12,7 +12,7 @@ function about() {
                         <div className="text-center font-semibold text-lg tracking-wide">Kamrul Hasan Rayhan</div>
                         <div className="text-center text-base">@khrayhan</div>
                     </div>
-                    <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold  md:border-t-2 border-green-400 md:shadow-lg p-6 text-lg tracking-wide sm:rounded-xl" >
+                    <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold  md:border-t-2 border-green-400 md:shadow-lg p-6 sm:text-lg sm:tracking-wide sm:rounded-xl" >
                         I'm a Full Stack Developer from Dhaka, Bangladesh. <br />
                         I always strive to write elegent and efficient code. Passionate about learning and exploring new technologies as
                         well as enthusiastic about UI/UX.<br />
@@ -20,7 +20,7 @@ function about() {
                     </div>
                 </div>
             </div>
-            <div className="md:h-screen flex md:flex-row justify-center items-center flex-col mb-14" id="#aboutskill">
+            <div className="md:h-screen flex md:flex-row justify-center items-center flex-col mb-14" id="techSkill">
             <div className="md:text-6xl text-4xl font-extrabold flex-wrap text-green-400 mx-5 md:row-start-2">
                     Tech Skills<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
