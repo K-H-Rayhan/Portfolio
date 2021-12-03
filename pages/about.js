@@ -22,7 +22,7 @@ function about() {
                 <div>
             <div className=" font-light tracking-widest text-center mb-2 ">THINGS I'M GOOD AT</div> 
             <div className="md:text-6xl text-4xl font-extrabold flex-wrap text-green-400 mx-5 md:row-start-2">
-                    Tech Skills<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
+                    Skills<hr className="mt-3 w-16 h-2 bg-green-400 rounded-full" />
                 </div>
 
                 </div>
