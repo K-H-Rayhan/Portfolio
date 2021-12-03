@@ -41,14 +41,14 @@ export default function Home() {
         </div>
         <div className="lg:col-span-4 flex flex-col md:flex-row">
           <div className="flex flex-col md:ml-4 place-content-center  ">
-            <Designstep number="1" text="Simple Design" bigText="Thinking as a user first" />
-            <Designstep number="2" text="High Performance" bigText="90+ Score in GT Metrix and Lighthouse" />
-            <Designstep number="3" text="SEO" bigText="Good SEO optimization" />
+            <Designstep number="1" text="Simple Design"  />
+            <Designstep number="2" text="High Performance" />
+            <Designstep number="3" text="Better SEO" />
           </div>
           <div className="flex flex-col place-content-center md:ml-4 md:mt-0" >
-            <Designstep number="4" text="Responsiveness" bigText="Testing into all device perspective" />
-            <Designstep number="5" text="Bugs & Errors" bigText="Making sure no Bugs & Errors" />
-            <Designstep number="6" text="Clean Code" bigText="Writing Clean Codes with comments" />
+            <Designstep number="4" text="Responsiveness"/>
+            <Designstep number="5" text="No Bugs & Errors"/>
+            <Designstep number="6" text="Clean Code"/>
           </div>
         </div>
         <div className="text-center md:col-span-3 hidden lg:block ">

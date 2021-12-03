@@ -7,7 +7,10 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/images/download1.png')",
         'contactBg': "url('/images/contactUs.png')",
-       }
+       },
+      fontFamily:{
+        'inter': 'Inter'
+      }
     },
   },
   variants: {
