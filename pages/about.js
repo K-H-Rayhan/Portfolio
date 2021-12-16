@@ -2,16 +2,16 @@ import Layout from '../components/layout/Layout'
 function about() {
     return (
         <Layout title="Rayhan | About">
-            <div className=" h-screen flex flex-col justify-center items-center">
+            <div className="h-screen flex flex-col justify-center items-center pt-20">
                  
                 <div className=" flex flex-col mx-auto bg-white items-center">
                     <div className=" flex flex-col">
-                        <img className="w-32 h-32 mx-auto rounded-full border-2 mb-2 border-gray-100 " src="/images/1612016993441.jpg" alt="" />
+                        <img className="w-32 h-32 mx-auto rounded-full border-4 mb-2 border-gray-100 " src="/images/1612016993441.jpg" alt="" />
                         <div className="text-center font-extrabold text-3xl tracking-wide">Kamrul Hasan Rayhan</div>
-                        <div className="text-center text-base">@khrayhan</div>
+                        <a href='https://www.linkedin.com/in/kamrul-hasan-rayhan-76a42917b/' target="_blank"> <div className="py-2 text-center font-semibold text-base text-green-400">@khrayhan</div></a>
                     </div>
-                    <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5  md:border-t-2 border-green-400 md:shadow-lg p-6 sm:tracking-wide sm:rounded-xl text-xl font-bold" >
-                        I'm a Full Stack Developer from Dhaka, Bangladesh. <br />
+                    <div className="w-full antialiased sm:w-2/5 lg:w-2/5 md:mt-2 md:border-t-2 border-green-400 md:shadow-lg md:p-3 px-3  sm:tracking-wide sm:rounded-xl text-xl font-bold text-center " >
+                        I'm a <span className='text-3xl antialiased hover:subpixel-antialiased'>Full Stack Developer</span> from Dhaka, Bangladesh. <br/>
                         I always strive to write elegent and efficient code. Passionate about learning and exploring new technologies as
                         well as enthusiastic about UI/UX.<br />
                         When I'm not coding, I am either playing games or listening to music.
@@ -26,11 +26,11 @@ function about() {
 
                 </div>
                 <div className="w-full sm:w-2/5 lg:w-2/5 text-center mt-5 font-semibold md:border-t-2 border-green-400 md:shadow-lg p-6 text-xl tracking-wide sm:rounded-xl" >
-                    <div className="font-extrabold tracking-wide " >Libraries & Frameworks: <span className="font-bold tracking-tight  " >
+                    <div className="font-extrabold tracking-wide text-green-400" >Libraries & Frameworks: <span className=" tracking-tight text-black" >
                         React, NextJS, Tailwind, Bootstrap, ExpressJs</span><br /></div>
-                    <div className="font-extrabold tracking-wide" >Databases: <span className="font-bold tracking-tight " >
+                    <div className="font-extrabold tracking-wid text-green-400" >Databases: <span className="tracking-tight text-black" >
                         MongoDB, MySQL</span><br /></div>
-                        <div className="font-extrabold tracking-wide" >Miscellaneous: <span className="font-bold tracking-tight " >
+                        <div className="font-extrabold tracking-wide text-green-400" >Miscellaneous: <span className="tracking-tight text-black" >
                         Wordpress, Elementor</span><br /></div>
                 </div>
             </div>
