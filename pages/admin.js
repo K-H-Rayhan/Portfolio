@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
 import React from 'react'
-import { data } from 'autoprefixer';
-// import clientPromise from '../lib/mongodb'
 
 function admin() {
   const [inputs, setInputs] = useState('')
   const [data, setData] = useState(null)
   const submit = (e) => {
-    fetch(`/api/contact?password=${inputs}`)
+    fetch(`https://khrayhan.me/api/contact?password=${inputs}`)
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -50,13 +48,10 @@ function admin() {
 
 export default admin
 export async function getServerSideProps() {
-  fetch(`/api/contact`)
+  fetch(`https://khrayhan.me/api/contact`)
     .then(response => response.json())
     .then(datax => {
     })
-    // .catch(err => console.error(err));
-    // const res = await fetch(`http://localhost:3000/api/contact`)
-    // const events = await res.json()
   
     return {
       props: {  },

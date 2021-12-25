@@ -7,7 +7,7 @@ export default function contact() {
     const inputDesign = " text-lg font-semibold focus:ring-1 focus:ring-green-400 outline-none rounded-md h-12 border-2 border-gray-300 focus:border-green-400 p-2 md:mb-0 mb-3"
     const [inputs, setInputs] = useState({});
     const done = async (e) => {
-        const data = await fetch(`/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
+        const data = await fetch(`https://khrayhan.me/api/contact?username=${inputs.username}&email=${inputs.email}&phone=${inputs.phone}&message=${inputs.text}`)
         const res = await data.json();
         console.log(res);
     }
@@ -70,7 +70,7 @@ export default function contact() {
 export async function getStaticProps() {
     const client = await clientPromise
     const db = client.db("contact");
-    fetch(`/api/contact`)
+    fetch(`https://khrayhan.me/api/contact`)
     .then(response => response.json())
     .then(datax => {
     })
