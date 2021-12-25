@@ -70,6 +70,10 @@ export default function contact() {
 export async function getStaticProps() {
     const client = await clientPromise
     const db = client.db("contact");
+    fetch(`/api/contact`)
+    .then(response => response.json())
+    .then(datax => {
+    })
     // client.db() will be the default database passed in the MONGODB_URI
     // You can change the database by calling the client.db() function and specifying a database like:
     // const db = client.db("myDatabase");

@@ -7,7 +7,7 @@ function admin() {
   const [inputs, setInputs] = useState('')
   const [data, setData] = useState(null)
   const submit = (e) => {
-    fetch(`https://khrayhan.me/api/contact?password=${inputs}`)
+    fetch(`/api/contact?password=${inputs}`)
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -50,7 +50,7 @@ function admin() {
 
 export default admin
 export async function getServerSideProps() {
-  fetch(`https://khrayhan.me/api/contact`)
+  fetch(`/api/contact`)
     .then(response => response.json())
     .then(datax => {
     })
