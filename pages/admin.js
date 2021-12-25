@@ -47,3 +47,9 @@ function admin() {
 }
 
 export default admin
+export async function getStaticProps(context) {
+  const res = fetch('https://khrayhan.me/api/contact');
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
