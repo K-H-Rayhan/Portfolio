@@ -1,3 +1,4 @@
+// export const config = { amp: true }
 import Button from '../components/others/Button'
 import Layout from '../components/layout/Layout'
 import Designstep from '../components/card/Designstep'

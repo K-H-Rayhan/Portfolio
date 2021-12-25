@@ -9,7 +9,7 @@ export default function Layout({ title, keywords, description, children }) {
             <meta name='keywords' content={keywords} />
             <Header />
             <div className="flex flex-col items-center "> {children}</div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
