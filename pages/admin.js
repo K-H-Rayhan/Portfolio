@@ -47,7 +47,7 @@ function admin() {
 }
 
 export default admin
-export async function getServerSideProps() {
+export async function getStaticProps() {
   fetch(`https://khrayhan.me/api/contact`)
     .then(response => response.json())
     .then(datax => {

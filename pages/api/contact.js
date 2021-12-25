@@ -6,18 +6,22 @@ const saltRounds = 10;
 var savedHash = '$2b$10$61FkQYfOdA3FNwApowEP/uUbAJN3HOhPdfWHzFfSn9tvuJHfMo/1u';
 
 export default async function handler(req, res) {
+  return new Promise(async(resolve) => {
   const client = await clientPromise
   const db = client.db("contact");
   const data1 = req.query;
-  if (data1.username != null) { db.collection("me").insertOne(data1); }
+  if (data1.username != null) { db.collection("me").insertOne(data1); return resolve() }
   const myPlaintextPassword = req.query.password;
   bcrypt.compare(myPlaintextPassword, savedHash, function (err, result) {
     if (result) {
       db.collection("me").find({}).toArray().then(datax => {
         res.status(200).send(datax);
+        return resolve()
       });
     } else {
       res.status(200).json({ name: 'False' });
+      return resolve()
     }
-  })
+  })})
 }
+
