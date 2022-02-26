@@ -45,7 +45,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="w-screen h-screen" ref={projects}>
+      {/* <div className="w-screen h-screen" ref={projects}>
         <div className="flex text-center w-screen justify-center mt-20">
           <span className="text-lg text-green-400 font-extrabold md:font-bold">
             My Projects
@@ -122,7 +122,7 @@ export default function Home() {
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-      </div>
+      </div> */}
       <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full">
         <div className="text-center">
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 lg:py-10 my-4 lg:my-0 mb-5 lg:mb-0">
