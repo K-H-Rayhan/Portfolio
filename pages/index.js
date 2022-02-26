@@ -4,7 +4,10 @@ import Designstep from "../components/card/Designstep";
 import Homecard from "../components/card/Homecard";
 import Testimonial from "../components/card/Testimonial";
 import { Tab } from "@headlessui/react";
+import { useRef } from "react";
+import Link from "next/link";
 export default function Home() {
+  const projects = useRef();
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -29,8 +32,96 @@ export default function Home() {
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 mx-4 md:my-0 text-black">
             I am a Full Stack Web Developer
           </div>
-          <Button link="blog" name="Explore Blogs &#8594;" />
+          {/* <Button link="blog" name="Explore Blogs &#8594;" /> */}
+          <button
+            onClick={() => {
+              projects.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className=" bg-green-400 hover:bg-green-500 text-sm text-white font-bold py-6 px-12 rounded-full tracking-widest transform duration-500 hover:-translate-y-4 mt-3 mb-10"
+          >
+            Explore Projects &#8594;
+          </button>
         </div>
+      </div>
+      <div className="w-screen h-screen" ref={projects}>
+        <div className="flex text-center w-screen justify-center mt-20">
+          <span className="text-lg text-green-400 font-extrabold md:font-bold">
+            My Projects
+          </span>
+        </div>
+        <Tab.Group>
+          <div className="flex text-center w-screen justify-center">
+            <Tab.List className="flex p-1 space-x-1 bg-white shadow-md m-3 border-green-300 rounded-3xl w-80">
+              <Tab
+                className={({ selected }) =>
+                  classNames(
+                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl",
+                    "focus:outline-none",
+                    selected
+                      ? "bg-green-400 shadow text-white"
+                      : "text-black hover:bg-green-400 hover:text-white"
+                  )
+                }
+              >
+                ReactJS
+              </Tab>
+              <Tab
+                className={({ selected }) =>
+                  classNames(
+                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl text-center",
+                    "focus:outline-none ",
+                    selected
+                      ? "bg-green-400  shadow text-white"
+                      : "text-black hover:bg-green-400 hover:text-white"
+                  )
+                }
+              >
+                React Native
+              </Tab>
+              <Tab
+                className={({ selected }) =>
+                  classNames(
+                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl text-center",
+                    "focus:outline-none ",
+                    selected
+                      ? "bg-green-400  shadow text-white"
+                      : "text-black hover:bg-green-400 hover:text-white"
+                  )
+                }
+              >
+                Wordpress
+              </Tab>
+            </Tab.List>
+          </div>
+          <Tab.Panels className="w-screen">
+            <Tab.Panel
+              className={classNames(
+                "bg-white rounded-xl p-3",
+                "focus:outline-none "
+              )}
+            >
+              <Testimonial title="ReactJS" />
+            </Tab.Panel>
+            <Tab.Panel
+              className={classNames(
+                "bg-white rounded-xl p-3",
+                "focus:outline-none "
+              )}
+            >
+              <Testimonial title="React Native" />
+            </Tab.Panel>
+            <Tab.Panel
+              className={classNames(
+                "bg-white rounded-xl p-3",
+                "focus:outline-none "
+              )}
+            >
+              <Testimonial title="Wordpress" />
+            </Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
       </div>
       <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full">
         <div className="text-center">
@@ -108,84 +199,6 @@ export default function Home() {
           <Button link="contact" name="Cotact Me&#8594;" />
         </div>
       </div>
-      {/* <div className="mt-14 w-screen h-screen">
-        <div className="flex text-center w-screen justify-center">
-          <span class="text-lg text-green-400 font-extrabold md:font-bold">
-            My Projects
-          </span>
-        </div>
-        <Tab.Group>
-          <div className="flex text-center w-screen justify-center">
-            <Tab.List className="flex p-1 space-x-1 bg-white shadow-md m-3 border-green-300 rounded-3xl w-80">
-              <Tab
-                className={({ selected }) =>
-                  classNames(
-                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl",
-                    "focus:outline-none",
-                    selected
-                      ? "bg-green-400 shadow text-white"
-                      : "text-black hover:bg-green-400 hover:text-white"
-                  )
-                }
-              >
-                ReactJS
-              </Tab>
-              <Tab
-                className={({ selected }) =>
-                  classNames(
-                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl text-center",
-                    "focus:outline-none ",
-                    selected
-                      ? "bg-green-400  shadow text-white"
-                      : "text-black hover:bg-green-400 hover:text-white"
-                  )
-                }
-              >
-                React Native
-              </Tab>
-              <Tab
-                className={({ selected }) =>
-                  classNames(
-                    "w-1/3 py-2.5 text-sm font-medium rounded-3xl text-center",
-                    "focus:outline-none ",
-                    selected
-                      ? "bg-green-400  shadow text-white"
-                      : "text-black hover:bg-green-400 hover:text-white"
-                  )
-                }
-              >
-                Wordpress
-              </Tab>
-            </Tab.List>
-          </div>
-          <Tab.Panels className="w-screen">
-            <Tab.Panel
-              className={classNames(
-                "bg-white rounded-xl p-3",
-                "focus:outline-none "
-              )}
-            >
-              <Testimonial title="ReactJS" />
-            </Tab.Panel>
-            <Tab.Panel
-              className={classNames(
-                "bg-white rounded-xl p-3",
-                "focus:outline-none "
-              )}
-            >
-              <Testimonial title="React Native" />
-            </Tab.Panel>
-            <Tab.Panel
-              className={classNames(
-                "bg-white rounded-xl p-3",
-                "focus:outline-none "
-              )}
-            >
-              <Testimonial title="Wordpress" />
-            </Tab.Panel>
-          </Tab.Panels>
-        </Tab.Group>
-      </div> */}
     </Layout>
   );
 }
