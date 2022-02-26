@@ -11,6 +11,57 @@ export default function Home() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
+  const reactJs = [
+    {
+      name: "University Finder",
+      description: "Find university according to your qualification",
+      stack: "NextJs and ExpressJs",
+      imgLink: "/images/nextjs2.jpg",
+      liveAt: "https://universityfinder.vercel.app/",
+    },
+    {
+      name: "Chatfire",
+      stack: "React and Firebase",
+      description: "Public Chatting application with real time texting",
+      imgLink: "/images/ReactJs.jpg",
+      liveAt: "https://chatfire.netlify.app/",
+    },
+    {
+      name: "KHRayhan",
+      description: "My Personal Portfolio and Blog",
+      stack: "NextJs and Tailwind",
+      imgLink: "/images/nextjs1.jpg",
+      liveAt: "https://khrayhan.me/",
+    },
+  ];
+  const reactNative = [
+    {
+      name: "Contact App",
+      description: "Contact app with authentication and contact syncing",
+      imgLink: "/images/reactNative.jpg",
+      stack: "React Native and React Native Paper",
+    },
+  ];
+  const wordpress = [
+    {
+      name: "Gadget Store",
+      description: "Online Gadget Store for all type gadgets",
+      imgLink: "/images/Wordpress.jpg",
+      stack: "Wordpress and Elementor",
+    },
+    {
+      name: "Clothstate",
+      description: "Online Bike Accessories Store",
+      imgLink: "/images/Wordpress2.jpg",
+      stack: "Wordpress and Elementor",
+    },
+    {
+      name: "Atxbay",
+      description: "Online Clothing Store",
+      imgLink: "/images/Wordpress3.jpg",
+      stack: "Wordpress and Elementor",
+    },
+  ];
   return (
     <Layout
       title="Rayhan | Web Developer"
@@ -45,8 +96,8 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* <div className="w-screen h-screen" ref={projects}>
-        <div className="flex text-center w-screen justify-center mt-20">
+      <div className="w-screen h-screen" ref={projects}>
+        <div className="flex text-center w-screen justify-center mt-16 lg:mt-20">
           <span className="text-lg text-green-400 font-extrabold md:font-bold">
             My Projects
           </span>
@@ -102,7 +153,7 @@ export default function Home() {
                 "focus:outline-none "
               )}
             >
-              <Testimonial title="ReactJS" />
+              <Testimonial title="ReactJS" x={reactJs} />
             </Tab.Panel>
             <Tab.Panel
               className={classNames(
@@ -110,7 +161,7 @@ export default function Home() {
                 "focus:outline-none "
               )}
             >
-              <Testimonial title="React Native" />
+              <Testimonial title="React Native" x={reactNative} />
             </Tab.Panel>
             <Tab.Panel
               className={classNames(
@@ -118,12 +169,12 @@ export default function Home() {
                 "focus:outline-none "
               )}
             >
-              <Testimonial title="Wordpress" />
+              <Testimonial title="Wordpress" x={wordpress} />
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-      </div> */}
-      <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full">
+      </div>
+      <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full mt-44 lg:mt-0">
         <div className="text-center">
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 lg:py-10 my-4 lg:my-0 mb-5 lg:mb-0">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">

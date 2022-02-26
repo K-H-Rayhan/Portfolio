@@ -1,24 +1,6 @@
 import React, { useState } from "react";
 
-function Testimonial(props) {
-  const x = [
-    {
-      name: "NextJS",
-      company: "1 Inc.",
-    },
-    {
-      name: "Wordpress",
-      company: "2 Inc.",
-    },
-    {
-      name: "React native",
-      company: "3 Inc.",
-    },
-    {
-      name: "React pusu",
-      company: "4 Inc.",
-    },
-  ];
+function Testimonial({ title, x }) {
   const [val, setVal] = useState(0);
   const [cur, setCur] = useState(x[val]);
   return (
@@ -26,33 +8,33 @@ function Testimonial(props) {
       <section className=" w-full relative overflow-hidden">
         <div className="relative max-w-4xl px-4 lg:px-0 mx-auto">
           <div className="max-w-xl mb-8">
-            <h2 className="text-3xl text-gray-800 font-bold font-heading">
-              {props.title}
-            </h2>
+            {/* <h2 className="text-2xl text-gray-800 font-bold font-heading">
+              {title}
+            </h2> */}
           </div>
           <div className="relative ">
-            {x.length > 2 ? (
+            {/* {x.length > 2 ? (
               <>
                 <div className="hidden lg:block absolute top-0 left-0 -ml-80 skew-y-[-8deg] mt-6">
                   <img
                     className="-mr-52 w-112 h-96 object-cover  rounded-3xl  opacity-50 "
-                    src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80"
+                    src={x[val+1].imgLink}
                     alt=""
                   />
                 </div>
                 <div className="hidden lg:block absolute top-0 right-0 -mr-80 skew-y-[8deg] mt-6">
                   <img
-                    className="-mr-52 w-112 h-96 object-cover  rounded-3xl  opacity-50"
-                    src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80"
+                    className="-mr-52 w-112 h-96 object-cover  rounded-3xl  opacity-50 "
+                    src={x[val+1].imgLink}
                     alt=""
                   />
                 </div>
               </>
-            ) : null}
+            ) : null} */}
             <div className="relative max-w-4xl mx-auto">
               <img
-                className="w-full h-96 mb-12 object-cover rounded-3xl"
-                src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1100&amp;q=80"
+                className="w-full mb-12 object-cover rounded-xl object-right-bottom border-2 border-gray-50"
+                src={cur.imgLink}
                 alt=""
               />
               <div className="flex flex-wrap -mx-5">
@@ -64,12 +46,26 @@ function Testimonial(props) {
                         clipPath: "polygon(50% 0%, 100% 50%, 0% 50%, 0% 50%)",
                       }}
                     ></div>
-                    <h3 className="mb-6 text-4xl text-white font-bold font-heading">
-                      {cur.company}
-                    </h3>
-                    <p className="text-lg text-white">
-                      The brown fox jumps over the lazy dog.
-                    </p>
+                    <div className=" flex flex-col md:flex-row justify-between items-center">
+                      <div>
+                        <h3 className=" text-center text-lg text-white font-bold font-heading">
+                          {cur.name}
+                        </h3>
+                        <p className="text-sm text-center  text-white">
+                         <span className=" font-semibold">Stack: </span>{cur.stack}
+                        </p>
+                        <p className="text-sm text-center text-white">
+                          {cur.description}
+                        </p>
+                      </div>
+                      {cur.liveAt?<div className=" h-full flex items-center justify-center">
+                        <p className="text-sm text-black mt-2 bg-white rounded-full w-20 p-1 text-center">
+                          <a href={cur.liveAt} target="_blank">
+                            Live
+                          </a>
+                        </p>
+                      </div>:null}
+                    </div>
                   </div>
                 </div>
                 <div className="w-auto mx-auto lg:w-1/5 px-5">
