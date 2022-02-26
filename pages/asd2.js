@@ -4,7 +4,7 @@ import Designstep from "../components/card/Designstep";
 import Homecard from "../components/card/Homecard";
 import Testimonial from "../components/card/Testimonial";
 import { Tab } from "@headlessui/react";
-export default function Home() {
+export default function ASD2() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -108,7 +108,7 @@ export default function Home() {
           <Button link="contact" name="Cotact Me&#8594;" />
         </div>
       </div>
-      {/* <div className="mt-14 w-screen h-screen">
+      <div className="mt-14 w-screen h-screen">
         <div className="flex text-center w-screen justify-center">
           <span class="text-lg text-green-400 font-extrabold md:font-bold">
             My Projects
@@ -185,7 +185,7 @@ export default function Home() {
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-      </div> */}
+      </div>
     </Layout>
   );
 }

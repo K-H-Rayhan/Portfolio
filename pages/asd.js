@@ -16,7 +16,6 @@ function asd() {
       setLoading(false);
     }, 5000);
   };
-
   return loading ? (
     <div className=" w-full flex justify-content items-center">
       <main>

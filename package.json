@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
     "@lottiefiles/lottie-player": "^1.5.5",
     "bcrypt": "^5.0.1",
     "mongodb": "^3.7.3",
