@@ -16,7 +16,7 @@ export default function Home() {
       name: "University Finder",
       description: "Find university according to your qualification",
       stack: "NextJs and ExpressJs",
-      imgLink: "/images/nextjs2.jpg",
+      imgLink: "/images/Nextjs3.jpg",
       liveAt: "https://universityfinder.vercel.app/",
     },
     {
@@ -174,7 +174,7 @@ export default function Home() {
           </Tab.Panels>
         </Tab.Group>
       </div>
-      <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full mt-44 lg:mt-0">
+      <div className="grid lg:grid-cols-2 lg:h-screen items-center justify-items-center w-full mt-4 lg:mt-0">
         <div className="text-center">
           <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 lg:py-10 my-4 lg:my-0 mb-5 lg:mb-0">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">
