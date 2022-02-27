@@ -41,7 +41,7 @@ function Testimonial({ title, x }) {
                 <div className="w-full lg:w-4/5 px-5 mb-6 lg:mb-0">
                   <div className="relative lg:py-12 py-5 px-10 lg:px-20 bg-gradient-to-br from-green-400 to-blue-400 rounded-xl">
                     <div
-                      className="absolute top-[-3px] -mt-6 left-0 ml-16 w-14 h-14 bg-green-400 "
+                      className="absolute top-[-3px] -mt-6 left-0 ml-16 w-14 h-14 bg-[#37D0A0] "
                       style={{
                         clipPath: "polygon(50% 0%, 100% 50%, 0% 50%, 0% 50%)",
                       }}
