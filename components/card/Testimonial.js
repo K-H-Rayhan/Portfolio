@@ -39,32 +39,35 @@ function Testimonial({ title, x }) {
               />
               <div className="flex flex-wrap -mx-5">
                 <div className="w-full lg:w-4/5 px-5 mb-6 lg:mb-0">
-                  <div className="relative lg:py-12 py-5 px-10 lg:px-20 bg-green-400 rounded-xl">
+                  <div className="relative lg:py-12 py-5 px-10 lg:px-20 bg-gradient-to-br from-green-400 to-blue-400 rounded-xl">
                     <div
-                      className="absolute top-0 -mt-6 left-0 ml-16 w-14 h-14 bg-green-400"
+                      className="absolute top-0 -mt-6 left-0 ml-16 w-14 h-14 bg-green-400 "
                       style={{
                         clipPath: "polygon(50% 0%, 100% 50%, 0% 50%, 0% 50%)",
                       }}
                     ></div>
                     <div className=" flex flex-col md:flex-row justify-between items-center">
                       <div>
-                        <h3 className=" text-center text-lg text-white font-bold font-heading">
+                        <h3 className=" text-start text-xl text-white font-bold font-heading">
                           {cur.name}
                         </h3>
-                        <p className="text-sm text-center  text-white">
-                         <span className=" font-semibold">Stack: </span>{cur.stack}
+                        <p className="text-md text-start  text-white">
+                          <span className=" font-semibold">Stack: </span>
+                          {cur.stack}
                         </p>
-                        <p className="text-sm text-center text-white">
+                        <p className="text-md text-start text-white">
                           {cur.description}
                         </p>
                       </div>
-                      {cur.liveAt?<div className=" h-full flex items-center justify-center">
-                        <p className="text-sm text-black mt-2 bg-white rounded-full w-20 p-1 text-center">
-                          <a href={cur.liveAt} target="_blank">
-                            Live
-                          </a>
-                        </p>
-                      </div>:null}
+                      {cur.liveAt ? (
+                        <div className=" h-full flex items-center justify-center">
+                          <p className="text-sm text-black mt-2 bg-white rounded-full w-20 p-1 text-center border-2 border-gray-50">
+                            <a href={cur.liveAt} target="_blank">
+                              Live
+                            </a>
+                          </p>
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 </div>
