@@ -4,7 +4,7 @@ import Designstep from "../components/card/Designstep";
 import Homecard from "../components/card/Homecard";
 import Testimonial from "../components/card/Testimonial";
 import { Tab } from "@headlessui/react";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 export default function Home() {
   const projects = useRef();
@@ -62,6 +62,24 @@ export default function Home() {
       stack: "Wordpress and Elementor",
     },
   ];
+
+  const [anim, setAnim] = useState({
+    scale: "scale-0",
+    opacity: "opacity-0",
+    translateRight: "translate-x-[1000px]",
+    translateLeft: "translate-x-[-1000px]",
+  });
+  useEffect(() => {
+    setTimeout(() => {
+      setAnim((prev) => ({
+        ...prev,
+        scale: "scale-100",
+        opacity: "opacity-100",
+        translateRight: "translate-x-0",
+        translateLeft: "translate-x-0",
+      }));
+    }, 0);
+  }, []);
   return (
     <Layout
       title="Rayhan | Web Developer"
@@ -69,18 +87,21 @@ export default function Home() {
       description="Kamrul Hasan Rayhan Portfolio"
     >
       <div className="grid md:grid-cols-3 md:grid-rows-none grid-rows-2 h-screen items-center justify-items-center w-full lg:w-3/5 md:w-3/4 ">
-        <div className="md:col-span-1 row-span-1 pt-12 md:pt-0 ">
+        <div className={`md:col-span-1 row-span-1 pt-12 md:pt-0 `}>
+          {/* transform transition-all duration-500 ease-out  ${anim.translateLeft} */}
           <img
             src="/images/16120170213243.jpg"
             alt="Kamrul Hasan Rayhan"
             className="rounded-full  md:w-80 w-52 "
           />
         </div>
-        <div className="md:col-span-2 flex flex-col items-center text-center self-start md:self-center row-span-1 ">
+        <div className="md:col-span-2 flex flex-col items-center text-center self-start md:self-center row-span-1 overflow-hidden ">
           <div className="text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-blue-600  tracking-wider font-medium text-sm">
             GAMER, GRAPHIC DESIGNER, PROGRAMMER
           </div>
-          <div className="flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 mx-4 md:my-0 text-black">
+          <div
+            className={`flex xl:text-7xl lg:text-6xl text-5xl font-extrabold flex-wrap py-2 md:py-10 my-4 mx-4 md:my-0 text-black transform transition-all duration-500 ease-out ${anim.scale}`}
+          >
             I am a Full Stack Web Developer
           </div>
           {/* <Button link="blog" name="Explore Blogs &#8594;" /> */}
@@ -90,7 +111,7 @@ export default function Home() {
                 behavior: "smooth",
               });
             }}
-            className=" bg-green-400 hover:bg-green-500 text-sm text-white font-bold py-6 px-12 rounded-full tracking-widest transform duration-500 hover:-translate-y-4 mt-3 mb-10"
+            className={` bg-green-400 hover:bg-green-500 text-sm text-white font-bold py-6 px-12 rounded-full tracking-widest transform duration-700 hover:-translate-y-4 mt-3 mb-10 ${anim.translateRight}`}
           >
             Explore Projects &#8594;
           </button>
