@@ -55,7 +55,7 @@ function Testimonial({ title, x }) {
                           <span className=" font-semibold">Stack: </span>
                           {cur.stack}
                         </p>
-                        <p className="text-md text-start text-white">
+                        <p className="text-[14px] text-start text-white">
                           {cur.description}
                         </p>
                       </div>
