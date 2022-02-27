@@ -61,7 +61,7 @@ function Testimonial({ title, x }) {
                       </div>
                       {cur.liveAt ? (
                         <div className=" h-full flex items-center justify-center">
-                          <p className="text-sm text-black mt-2 bg-white rounded-full w-20 p-1 text-center border-2 border-gray-50">
+                          <p className="text-sm text-black mt-2 bg-white rounded-full w-20 p-1 text-center border-4 border-gray-50">
                             <a href={cur.liveAt} target="_blank">
                               Live
                             </a>
