@@ -101,13 +101,14 @@ function Testimonial({ title, x }) {
                           translateRight: "translate-x-[-1000px]",
                           translateLeft: "translate-x-[-1000px]",
                         }));
+                        let temp = null;
                         if (val <= 0) {
-                          val = x.length - 1;
+                          temp = x.length - 1;
                         } else {
-                          val--;
+                          temp = val - 1;
                         }
-                        setVal(val);
-                        setCur(x[val]);
+                        setVal(temp);
+                        setCur(x[temp]);
                       }}
                     >
                       <svg
@@ -134,13 +135,14 @@ function Testimonial({ title, x }) {
                           translateRight: "translate-x-[1000px]",
                           translateLeft: "translate-x-[-1000px]",
                         }));
+                        let temp = null;
                         if (val >= x.length - 1) {
-                          val = 0;
+                          temp = 0;
                         } else {
-                          val++;
+                          temp = val + 1;
                         }
-                        setVal(val);
-                        setCur(x[val]);
+                        setVal(temp);
+                        setCur(x[temp]);
                       }}
                     >
                       <svg
