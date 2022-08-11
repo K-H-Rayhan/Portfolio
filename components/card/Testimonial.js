@@ -3,23 +3,23 @@ import React, { useEffect, useState } from "react";
 function Testimonial({ title, x }) {
   const [val, setVal] = useState(0);
   const [cur, setCur] = useState(x[val]);
-  const [anim, setAnim] = useState({
-    scale: "scale-0",
-    opacity: "opacity-0",
-    translateRight: "translate-x-[1000px]",
-    translateLeft: "translate-x-[-1000px]",
-  });
-  useEffect(() => {
-    setTimeout(() => {
-      setAnim((prev) => ({
-        ...prev,
-        scale: "scale-100",
-        opacity: "opacity-100",
-        translateRight: "translate-x-0",
-        translateLeft: "translate-x-0",
-      }));
-    }, 150);
-  }, [cur]);
+  // const [anim, setAnim] = useState({
+  //   scale: "scale-0",
+  //   opacity: "opacity-0",
+  //   translateRight: "translate-x-[1000px]",
+  //   translateLeft: "translate-x-[-1000px]",
+  // });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setAnim((prev) => ({
+  //       ...prev,
+  //       scale: "scale-100",
+  //       opacity: "opacity-100",
+  //       translateRight: "translate-x-0",
+  //       translateLeft: "translate-x-0",
+  //     }));
+  //   }, 150);
+  // }, [cur]);
 
   return (
     <div className="">
@@ -51,7 +51,8 @@ function Testimonial({ title, x }) {
             ) : null} */}
             <div className="relative max-w-4xl mx-auto">
               <img
-                className={`w-full mb-12 object-cover rounded-xl object-right-bottom border-2 border-gray-50  transform transition-all ease-in-out ${anim.scale}`}
+                className={`w-full mb-12 object-cover rounded-xl object-right-bottom border-2 border-gray-50  transform transition-all ease-in-out `}
+                // ${anim.scale}
                 src={cur.imgLink}
                 alt=""
               />
@@ -94,13 +95,13 @@ function Testimonial({ title, x }) {
                     <button
                       className="inline-flex mr-2 items-center justify-center w-14 h-14 bg-green-400 hover:bg-green-500 rounded-full"
                       onClick={() => {
-                        setAnim((prev) => ({
-                          ...prev,
-                          scale: "scale-0",
-                          opacity: "opacity-0",
-                          translateRight: "translate-x-[-1000px]",
-                          translateLeft: "translate-x-[-1000px]",
-                        }));
+                        // setAnim((prev) => ({
+                        //   ...prev,
+                        //   scale: "scale-0",
+                        //   opacity: "opacity-0",
+                        //   translateRight: "translate-x-[-1000px]",
+                        //   translateLeft: "translate-x-[-1000px]",
+                        // }));
                         let temp = null;
                         if (val <= 0) {
                           temp = x.length - 1;
@@ -128,13 +129,13 @@ function Testimonial({ title, x }) {
                     <button
                       className="inline-flex items-center justify-center w-14 h-14 bg-green-400 hover:bg-green-500 rounded-full"
                       onClick={() => {
-                        setAnim((prev) => ({
-                          ...prev,
-                          scale: "scale-0",
-                          opacity: "opacity-0",
-                          translateRight: "translate-x-[1000px]",
-                          translateLeft: "translate-x-[-1000px]",
-                        }));
+                        // setAnim((prev) => ({
+                        //   ...prev,
+                        //   scale: "scale-0",
+                        //   opacity: "opacity-0",
+                        //   translateRight: "translate-x-[1000px]",
+                        //   translateLeft: "translate-x-[-1000px]",
+                        // }));
                         let temp = null;
                         if (val >= x.length - 1) {
                           temp = 0;
